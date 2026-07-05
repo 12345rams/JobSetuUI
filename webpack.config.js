@@ -32,7 +32,8 @@ module.exports = {
       template: './index.html'
     }),
     new webpack.DefinePlugin({
-      'process.env.API_BASE': JSON.stringify(process.env.API_BASE || 'http://localhost:8080')
+      'process.env.API_BASE': JSON.stringify(process.env.API_BASE || 'http://localhost:8080'),
+      'process.env.GOOGLE_CLIENT_ID': JSON.stringify(process.env.GOOGLE_CLIENT_ID || '')
     })
   ],
   devServer: {
