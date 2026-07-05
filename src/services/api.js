@@ -19,4 +19,3 @@ export async function callApi(path, method = 'GET', token, body, isForm = false)
   if (res.status === 204) return null;
   return res.json();
 }
-
